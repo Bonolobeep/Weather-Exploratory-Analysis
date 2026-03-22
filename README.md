@@ -1,36 +1,34 @@
-# Weather-Exploratory-Analysis
-Python EDA of 2017 NOAA weather data: Mapping seasonal trends and data quality.
-Project2_WeatherAnalysis
-2017 U.S. Daily Weather Analysis What is this? This is my exploratory data analysis (EDA) project where I investigated over 416,000 weather records from NOAA. I wanted to see if I could find clear seasonal patterns in the numbers and check if the data was actually accurate. I produced 13 different visualizations to uncover the story behind the weather in 2017.
+Here's a shorter version:
 
-Who made this? Lead Student: Bonolo Ramolapong
 
-Completion Date 12 March 2026
+**Python EDA of 2017 NOAA Weather Data: Mapping Seasonal Trends and Data Quality**
 
-Project Requirements To build this analysis, I used:
+**What is this?**
+An exploratory data analysis of 416,000+ NOAA weather records from 2017, investigating seasonal temperature patterns, precipitation trends, and data quality issues across U.S. weather stations. The project produced 17 visualizations.
 
-Pandas (to handle the 400k+ rows of weather data)
+**Who made this?**
+Bonolo Ramolapong — 22 March 2026
 
-Matplotlib & Seaborn (to turn those numbers into 13 different charts)
+**Tools Used**
+Pandas, Matplotlib, Seaborn, Python Datetime
 
-Python Datetime (to convert raw text into a format that tracks time)
+**How to Run**
+1. Install: pip install pandas seaborn matplotlib
+2. Add weather.csv.gz to your project folder
+3. Run weather_analysis.ipynb
 
-How to Run My Project Install the tools: pip install pandas seaborn matplotlib
+**Key Findings**
+- Temperatures follow a clear seasonal wave, peaking in July
+- A single faulty sensor in Alaska was responsible for all impossible temperature readings (261.68°F)
+- Western states dominate the dataset, making the national average cooler than reality
+- Daytime and nighttime temperatures are strongly correlated (0.8)
+- Summer has the largest daily temperature swings (~23°F), winter the smallest (~18°F)
 
-The Data: Make sure the weather.csv.gz file (included in this repo) is in your project folder.
+**Files**
+- weather.csv.gz — raw dataset
+- weather_analysis.ipynb — full analysis notebook
+- Weather_Report_Visuals.docx — all 17 visualizations and captions
+- README.md — this file
 
-Launch the analysis: Run the provided Python script or Jupyter Notebook.
-
-See the results: The code automatically cleans the dates and generates the visualizations showing everything from temperature "mountains" to correlation heatmaps.
-
-Quick Lessons from the Data The "Mountain" Shape: By converting raw strings into month numbers, I found a perfect seasonal wave that peaks in July.
-
-Catching Errors: I spotted "impossible" temperatures over 200°F using boxplots. This proved that even professional datasets can have sensor glitches!
-
-Western Bias: Most records come from Utah and Montana, so the "national" average is actually weighted heavily toward the American West.
-
-The Heat Link: My heatmap showed a strong 0.8 correlation between daytime highs and nighttime lows, meaning they almost always move together.
-
-Files in this Repository weather.csv.gz: The raw dataset used for the analysis. weather_analysis.ipynb: The Python code/notebook containing the EDA. Weather_Report_Visuals.docx: A document containing all 13 visualizations and detailed captions. README.md: This project summary.
-
-Credits Data provided by NOAA. Big thanks to my lecturer Miss Ishe for the guidance on how to explore and visualize complex datasets!
+**Credits**
+Data: NOAA. Thanks to Miss Ishe for guidance throughout the project.
