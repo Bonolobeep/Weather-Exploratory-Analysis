@@ -4,7 +4,8 @@
 An exploratory data analysis of 416,000+ NOAA weather records from 2017, investigating seasonal temperature patterns, precipitation trends, and data quality issues across U.S. weather stations. The project produced 17 visualizations.
 
 **Who made this?**
-Bonolo Ramolapong — 22 March 2026
+Bonolo Ramolapong
+completed 22 March 2026
 
 **Tools Used**
 Pandas, Matplotlib, Seaborn, Python Datetime
