@@ -1,6 +1,3 @@
-Here's a shorter version:
-
-
 **Python EDA of 2017 NOAA Weather Data: Mapping Seasonal Trends and Data Quality**
 
 **What is this?**
